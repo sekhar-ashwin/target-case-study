@@ -7,14 +7,12 @@ const getProductById = (req, res, next) => {
     let finalResponse = {
         id: parseInt(req.params.productId)
     };
-    console.log("here in controller")
     //calls external target api
     externalApiService.makeApiCall(`${baseUrl}${req.params.productId}`)
         .then(data => {
             if (Object.keys(data.product.item).length) { //check for product existance
                 finalResponse['name'] = data.product.item.product_description.title;
                 //call service to find price of the product
-                console.log(req.params.productId, typeof req.params.productId , "-----")
                 return productPriceService.getPriceByProductId(req.params.productId);
             } else {
                 res.status(404).send({
@@ -28,7 +26,6 @@ const getProductById = (req, res, next) => {
             res.json(finalResponse)
         })
         .catch(err => {
-            console.log(err, "======");
             return next(err)
         });
 }

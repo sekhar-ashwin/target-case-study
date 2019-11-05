@@ -4,7 +4,6 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 const products = require('./routes/ProductRoutes');
-const externalApiService = require('./services/ExternalApiService');
 
 const config =  require('./config/dev.json');
 const PORT = config.port || 3000;
