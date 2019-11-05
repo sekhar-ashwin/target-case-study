@@ -1,0 +1,4 @@
+{
+    "baseUrl": "https://redsky.target.com/v2/pdp/tcin/",
+    "port": 3000
+}

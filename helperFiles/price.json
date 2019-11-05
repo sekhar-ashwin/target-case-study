@@ -1,0 +1,44 @@
+[
+    {
+        "productId": 13860429,
+        "current_price": {
+            "value": 13.78,
+            "currency_code": "USD"
+        }
+    },
+    {
+        "productId": 13860421,
+        "current_price": {
+            "value": 100.00,
+            "currency_code": "USD"
+        }
+    },
+    {
+        "productId": 13860423,
+        "current_price": {
+            "value": 23.90,
+            "currency_code": "USD"
+        }
+    },
+    {
+        "productId": 13860425,
+        "current_price": {
+            "value": 12.98,
+            "currency_code": "USD"
+        }
+    },
+    {
+        "productId": 13860427,
+        "current_price": {
+            "value": 50.87,
+            "currency_code": "USD"
+        }
+    },
+    {
+        "productId": 13860431,
+        "current_price": {
+            "value": 78.99,
+            "currency_code": "USD"
+        }
+    }
+]
