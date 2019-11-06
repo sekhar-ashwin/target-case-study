@@ -14,4 +14,4 @@ app.get('/', (req, res) => {
 
 app.use(`/products`, products);
 
-app.listen(PORT, () => { console.log('Node server listening on port 3000'); });
+app.listen(PORT, () => { console.log(`Node server listening on port ${PORT}`); });
